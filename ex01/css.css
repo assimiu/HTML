@@ -1,0 +1,28 @@
+
+div{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div a{
+    color: rgb(78, 75, 75);
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0px 50px 10px 0px;
+    position: relative;
+}
+
+div a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: rgb(109, 75, 75);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.7s ease-in-out;
+}
+
+div a:hover::after{
+    width: 100%;
+}

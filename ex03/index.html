@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito 3d</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <div class="conteiner">
+
+        <div class="card card1">
+            <h2>TÊNIS AZUL</h2>
+            <img src="./img1.png" alt="" class="produto">
+            <button>Comprar</button>
+        </div>
+
+        <div class="card card2">
+            <h2>TÊNIS VERMELHO</h2>
+            <img src="./img.png" alt="" class="produto">
+            <button>Comprar</button>
+        </div>
+
+        <div class="card card2">
+            <h2>TÊNIS VERMELHO</h2>
+            <img src="./img2.png" alt="" class="produto">
+            <button>Comprar</button>
+        </div>
+
+        <div class="card card3">
+            <h2>TÊNIS VERMELHO</h2>
+            <img src="./img3.png" alt="" class="produto">
+            <button>Comprar</button>
+        </div>
+
+        <div class="card card4">
+            <h2>TÊNIS VERMELHO</h2>
+            <img src="./img4.png" alt="" class="produto">
+            <button>Comprar</button>
+        </div>
+    </div>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 0.5
+	    });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url('./img2.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner{
+    width: 100%;
+    max-width: 500px;
+    background-color: transparent;
+    padding: 35px;
+    border: 2px solid white;
+    backdrop-filter: blur(0px);
+    overflow: hidden;
+
+    transform: backdrop-filter 1s;
+}
+
+.texto{
+    color: #fff;
+    position: relative;
+    top: 200px;
+    transition: top 1s;
+}
+
+.conteiner:hover .texto{
+    top: 0;
+}
+
+.conteiner:hover {
+    backdrop-filter: blur(6px);
+}

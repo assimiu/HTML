@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #010517;
+}
+
+.conteiner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+}
+
+.conteiner .card{
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    margin: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    background-color: aqua;
+
+    transform-style: preserve-3d;
+    border-radius: 30px;
+
+    cursor: pointer;
+}
+
+.conteiner .card h2{
+    color: #fff;
+    transform-style: preserve-3d;
+}
+
+.conteiner .card img.produto{
+    max-width: 250px;
+    transform-style: preserve-3d;
+
+    transition: .5s;
+}
+
+.conteiner .card:hover img.produto{
+    transform: translate3d(0, 0, 100px);
+}
+
+.conteiner .card button{
+    padding: 10px 40px;
+    background-color: #05a90a;
+    border: 0;
+    border-radius: 20px;
+    color:white;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 40px);
+}
+
+.conteiner div.card1{
+    background-image: linear-gradient(45deg, #f03e3e, #c6da4a);
+}
+
+.conteiner div.card2{
+    background-image: linear-gradient(45deg, #259fac, #121812);
+}
+
+.conteiner div.card3{
+    background-image: linear-gradient(45deg, #8b5fdd, #c76c3b);
+}
+
+.conteiner div.card4{
+    background-image: linear-gradient(45deg, #8b5fdda0, #39242e);
+}
